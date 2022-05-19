@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+    <script type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <!-- <img src="wea1.jpg" alt="" style="width: 100%; height: 760px;"> -->
+    <div class="container-1" id="con-1">
+      <h4 id="title_bar">Weather App</h4>
+      <h5 id="state">Enter a city name..</h5>
+      <input type="text" name="city" placeholder="Enter City" id="city"/><br>
+      <button type="button" id="check" >Check</button>
+      <h6 id="or">_________ Or _________</h6>
+      <button id="checkLocation" ">Check Your Loaction</button>
+    </div>
+
+    <div class="container-2" id="con-2">
+      <div class="back-btn"><a href="index.html" id="back-icon">&larr;</a>     Weather App</div>
+      <img src="img-1.png" id="weather-icon">
+      <div class="display-temperature" id="displayTemp">12 C</div>
+      <h3 id="weather-state">weather is good</h3>
+      <h3 id="location">Tokyo , Japan</h3>
+      <h4 id="feels">20 C<br>Feels like</h4>
+      <h4 id="humidity">96%<br>Humidity</h4>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

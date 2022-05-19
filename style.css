@@ -1,0 +1,99 @@
+body{
+  background-color: black;
+}
+.container-1{
+  max-width: 30vw;
+  background-color: rgb(242, 255, 0);
+  margin: 8vw 34vw;
+  height: 32vw;
+  text-align: center;
+  
+}
+#title_bar{
+  padding-top: 1vw;
+  font-size: 3vw;
+  margin-bottom: 2vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#state{
+  font-size: 2vw;
+  height: 3vw;
+  border: solid 0.3vw red;
+  margin: 1vw;
+  margin-bottom: 2.2vw;
+}
+#city{
+  max-width: 24vw;
+  font-size: 2vw;
+  font-family: 'bold';
+}
+#check{
+  font-size: 2.5vw;
+  margin-top: 1.7vw;
+  border-radius: 0.5vw;
+  background-color: rgb(251, 210, 25);
+  transition: transform 0.5s;
+}
+#check:hover{
+  transform: translateY(-3px)
+}
+#or{
+  font-size: 2.3vw; 
+  background-color: white;
+  margin: 2vw;
+  font-family: 'Times New Roman', Times, serif;
+}
+#checkLocation{
+  max-width: 23vw;
+  font-size: 2.3vw;
+  font-family: "bold";
+  word-spacing: 0.5vw;
+  background-color: rgb(138, 255, 5);
+  border-radius: 1vw;
+  transition: transform 0.5s;
+}
+#checkLocation:hover{
+  transform: translateY(-3px)
+}
+.container-2{
+  display: none;
+  max-width: 30vw;
+  background-color: rgb(242, 255, 0);
+  margin: 7vw 34vw;
+  padding: 1vw;
+  height: 37vw;
+  text-align: center;
+}
+.back-btn{
+  width: 26vw;
+  font-size: 2vw;
+  padding: 0.8vw;
+  height: 3vw;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  
+}
+#back-icon{
+  text-decoration: none;
+  font-size: 2.7vw;
+  color: red;
+}
+#weather-icon{
+  max-width: 100%;
+  width: 14vw;
+  height: 10vw;
+}
+.display-temperature{
+  font-size: 5vw;
+}
+#weather-state, #location{
+  font-size: 2vw;
+}
+#feels, #humidity{
+  display: inline-block;
+  font-size: 1.6vw;
+  width: 13.4vw;
+  height: 3.7vw;
+  text-align: center;
+  border: solid 0.2vw rgb(241, 206, 131);
+}
