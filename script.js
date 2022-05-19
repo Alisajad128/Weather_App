@@ -30,10 +30,10 @@ function onSuccess(position){
   document.getElementById("con-1").style.display = "none"
   document.getElementById("con-2").style.display = "block"
   document.getElementById("weather-icon").src = "http://openweathermap.org/img/wn/" + data.weather[0].icon+".png";
-  document.getElementById("displayTemp").innerText = Number(data.main.temp).toFixed(1)+"◦";
+  document.getElementById("displayTemp").innerText = Number(data.main.temp -273.15).toFixed(1)+"◦ C";
   document.getElementById("location").innerText = data.name;
   document.getElementById("weather-state").innerText = "wether"+data.weather[0].description;
-  document.getElementById("feels").innerText = Number(data.main.feels_like).toFixed(1)+"◦C"+"\nFeels like";
+  document.getElementById("feels").innerText = Number(data.main.feels_like -273.15).toFixed(1)+"◦C"+"\nFeels like";
   document.getElementById("humidity").innerText = Number(data.main.humidity).toFixed(1)+"%"+"\nHumifity";
 })};
 function onError(error){
@@ -52,10 +52,10 @@ function requestApi(cityName){
     document.getElementById("con-2").style.display = "block"
     document.getElementById("state").innerText = "Getting weather details...";
     document.getElementById("weather-icon").src = "http://openweathermap.org/img/wn/" + data.list[1].weather[0].icon+".png";
-    document.getElementById("displayTemp").innerText = Number(data.list[1].main.temp).toFixed(1)+"◦";
+    document.getElementById("displayTemp").innerText = Number(data.list[1].main.temp -273.15).toFixed(1)+"◦ C";
     document.getElementById("location").innerText = cityName;
     document.getElementById("weather-state").innerText = "wether"+data.list[1].weather[0].description;
-    document.getElementById("feels").innerText = Number(data.list[1].main.feels_like).toFixed(1)+"◦C"+"\nFeels like";
+    document.getElementById("feels").innerText = Number(data.list[1].main.feels_like -273.15).toFixed(1)+"◦ C"+"\nFeels like";
     document.getElementById("humidity").innerText = Number(data.list[1].main.humidity).toFixed(1)+"%"+"\nHumifity";
   }
   })};
