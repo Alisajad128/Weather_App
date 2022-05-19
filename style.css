@@ -5,7 +5,7 @@ body{
   max-width: 30vw;
   background-color: rgb(242, 255, 0);
   margin: 8vw 34vw;
-  height: 32vw;
+  height: 35vw;
   text-align: center;
   
 }
@@ -45,9 +45,9 @@ body{
 }
 #checkLocation{
   max-width: 23vw;
-  font-size: 2.3vw;
+  font-size: 2vw;
   font-family: "bold";
-  word-spacing: 0.5vw;
+  word-spacing: 0.3vw;
   background-color: rgb(138, 255, 5);
   border-radius: 1vw;
   transition: transform 0.5s;
@@ -91,8 +91,9 @@ body{
 }
 #feels, #humidity{
   display: inline-block;
+  background-color: aliceblue;
   font-size: 1.6vw;
-  width: 13.4vw;
+  width: 9.4vw;
   height: 3.7vw;
   text-align: center;
   border: solid 0.2vw rgb(241, 206, 131);
